@@ -5,14 +5,13 @@
        	$results = array(); 
     	$handler = opendir($directory); 
     	while ($file = readdir($handler)) { 
-    		if ($file != '.' && $file != '..' && $file != '.git' && $file != '.gitignore' && $file != 'applications.html' && $file != 'bitnami.css' 
+    		if ($file != '.' && $file != 'phpList.php' && $file != '..' && $file != '.git' && $file != '.gitignore' && $file != 'applications.html' && $file != 'bitnami.css' 
             && $file != 'dashboard' && $file != 'etc' && $file != 'favicon.ico' && $file != 'img' && $file != 'index.php' && $file != 'webalizer' && $file != 'xampp' && is_dir($file) != '1') {
 	    		$results[] = $file; 
 		    }
 	    } 
-
-    	closedir($handler); 
-	    return $results;
+    	closedir($handler); 		
+	    return $results;		
     }    
 
 $dirArray = getFileNames("C:/xampp/htdocs");
@@ -28,4 +27,3 @@ for($i = 0; $i < count($dirArray); $i++){
     }
 
 ?>
-
