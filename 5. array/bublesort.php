@@ -21,5 +21,4 @@
     for($i = 0; $i<$numLen; $i++){
         echo "{$num[$i]} ";
     }
-    echo "<br>";
 ?>
