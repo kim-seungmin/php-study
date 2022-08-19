@@ -1,0 +1,1 @@
+xampp폴더 (기본 C:\xampp\php)의 php.ini 안의 ;extension=socket 을 extension=socket으로 변경
